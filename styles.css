@@ -1,0 +1,13 @@
+.BGheader {
+  padding: 5px;
+  text-align: center;
+  background: #111822;
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  right: 150px;
+}
