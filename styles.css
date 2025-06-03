@@ -1,13 +1,45 @@
-.BGheader {
-  padding: 5px;
-  text-align: center;
-  background: #111822;
-  color: white;
-  font-size: 30px;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
 
-  right: 150px;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Set the background image */
+.BGheader {
+    background-image: url('32226.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Optional overlay for readability */
+.BGheader::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent layer */
+    z-index: 0;
+}
+
+.BGheader h1, .BGheader p {
+    z-index: 1;
+    position: relative;
+}
+
+
+.content {
+    padding: 20rem;
 }
